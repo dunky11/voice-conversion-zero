@@ -1,0 +1,5 @@
+defaults:
+    - dataset: 2019/english
+    - preprocessing: default
+
+in_dir: /home/tim/Desktop/github/voice-conversion-training/datasets/flickr_audio/wavs

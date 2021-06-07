@@ -1,0 +1,5 @@
+transformer instead of first GRU, no positional embedding
+Epoch2, first: recon loss:2.87, vq loss:0.00, perpexlity:9.794, 1.65it/s
+
+Original implementations
+epoch:2, first, recon loss:2.85, vq loss:0.00, perpexlity:23.950, 1.6it/s
