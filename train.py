@@ -101,15 +101,16 @@ def train_model(cfg):
         speaker_ids,
         hop_length=cfg.preprocessing.hop_length,
         sr=cfg.preprocessing.sr,
-        sample_frames=cfg.training.sample_frames)
-
+        sample_frames=cfg.training.sample_frames
+    )
     dataloader = DataLoader(
         dataset,
         batch_size=cfg.training.batch_size,
         shuffle=True,
         num_workers=cfg.training.n_workers,
         pin_memory=True,
-        drop_last=True)
+        drop_last=True
+    )
 
     n_epochs = cfg.training.n_steps // len(dataloader) + 1
     start_epoch = global_step // len(dataloader) + 1
